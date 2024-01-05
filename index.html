@@ -5,9 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- linking css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- linking google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Rubik+Glitch&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+<!-- this div element with class pos-container is used for concept of position -->
+    <div class="pos-container">
+        <div class="static">This is static div</div>
+        <div class="relative">This is relative div</div>
+        <div class="absolute">This is absolute div</div>
+        <div class="fixed">This is fixed div</div>
+    </div>
+<!-- this div element with class z-container is used for concept of z-index -->
+    <div class="z-container">
+        <div class="z-items box-1" style="background-color: red;"></div>
+        <div class="z-items box-2"  style="background-color: blue;"></div>
+        <div class="z-items box-3"  style="background-color: green;"></div>
+        <div class="z-items box-4" style="background-color: yellow;"></div>
+    </div>
+
+    <!-- float property-->
+    <p><img src="https://source.unsplash.com/1600x900/?icecream" alt="ice cream" style="width:170px;height:170px;margin-left:15px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+   
+    <!-- specificity -->
+    <p id="demo" class="test">Hello World!</p>    
+    
     <!-- lists -->
     <!-- unordered list -->
     <ul>
@@ -18,7 +47,7 @@
 
     </ul>
     <!-- ordered list -->
-    <ol>
+    <ol type="I">
         <li>Go left</li>
         <li>Move straight for 30m</li>
         <li>Take a right turn</li>
@@ -76,7 +105,7 @@
     <hr> <!--horizontal rule-->
 
     <!-- Form tag -->
-    <form action="/submit" method="post">
+    <form action="#" method="">
 
         <!-- name a required field-->
         <label for="username">Name: </label>
@@ -107,7 +136,6 @@
         <br>
         <!-- radio buttons -->
        <label> Gender:</label>
-        <br>
         <input type="radio" name="gender" id="male">
         <label for="male">Male</label>
 
@@ -130,5 +158,9 @@
         <button type="submit">Submit</button>
     </form>
     <br>
+    <footer>
+        This is footer Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum hic enim magni quisquam dolorum maxime repellendus harum necessitatibus! Id voluptatem ut delectus cupiditate quia perferendis consequatur, similique minus voluptates dolore omnis cum architecto asperiores ex illo maxime tenetur adipisci. Cumque?
+    </footer>
+
 </body>
 </html>
